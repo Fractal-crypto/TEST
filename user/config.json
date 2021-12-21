@@ -1,0 +1,35 @@
+{
+    "accepted_terms": true,
+    "backtesting": {
+        "files": []
+    },
+    "exchanges": {
+        "binance": {
+            "api-key": "your-api-key-here",
+            "api-password": "your-api-password-here",
+            "api-secret": "your-api-secret-here",
+            "enabled": true
+        }
+    },
+    "metrics": {
+        "enabled": true,
+        "metrics-bot-id": "61b9efde1fbeb749e428f64c"
+    },
+    "notification": {
+        "global-info": true,
+        "notification-type": [
+            "web"
+        ],
+        "price-alerts": true,
+        "trades": true
+    },
+    "profile": "daily_trading",
+    "services": {
+        "web": {
+            "auto-open-in-web-browser": true,
+            "password": "",
+            "require-password": false
+        }
+    },
+    "watched_symbols": []
+}
