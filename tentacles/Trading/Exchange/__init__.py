@@ -252,3 +252,12 @@ if check_tentacle_version('1.2.0', 'crex24', 'OctoBot-Default-Tentacles'):
                                            f'{e.__class__.__name__}{f" ({e})" if f"{e}" else ""}. If this '
                                            f'error persists, try reinstalling your tentacles via '
                                            f'"python start.py tentacles --install --all".')
+
+if check_tentacle_version('1.2.0', 'okcoin', 'OctoBot-Default-Tentacles'):
+    try:
+        from .okcoin import *
+    except Exception as e:
+        get_logger('TentacleLoader').error(f'Error when loading okcoin: '
+                                           f'{e.__class__.__name__}{f" ({e})" if f"{e}" else ""}. If this '
+                                           f'error persists, try reinstalling your tentacles via '
+                                           f'"python start.py tentacles --install --all".')
