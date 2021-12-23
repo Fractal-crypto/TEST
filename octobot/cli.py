@@ -386,20 +386,6 @@ def main(args=None):
 
     MIN_TENTACLE_MANAGER_VERSION = "1.0.10"
 
-    # check compatible tentacle manager
-    try:
-        from octobot_tentacles_manager import VERSION
-
-        if LooseVersion(VERSION) < MIN_TENTACLE_MANAGER_VERSION:
-            print("OctoBot requires OctoBot-Tentacles-Manager in a minimum version of " + MIN_TENTACLE_MANAGER_VERSION +
-                  " you can install and update OctoBot-Tentacles-Manager using the following command: "
-                  "python3 -m pip install -U OctoBot-Tentacles-Manager", file=sys.stderr)
-            sys.exit(-1)
-    except ImportError:
-        print("OctoBot requires OctoBot-Tentacles-Manager, you can install it using "
-              "python3 -m pip install -U OctoBot-Tentacles-Manager", file=sys.stderr)
-        sys.exit(-1)
-
     args = parser.parse_args(args)
     # call the appropriate command entry point
     args.func(args)

@@ -96,7 +96,6 @@
             "Kucoin": true,
             "KucoinCryptofeedWebsocketConnector": true,
             "OKExCryptofeedWebsocketConnector": true,
-            "Okcoin": true,
             "Okex": true,
             "SignalTradingMode": false,
             "StaggeredOrdersTradingMode": false,
