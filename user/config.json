@@ -3,6 +3,7 @@
     "backtesting": {
         "files": []
     },
+    "community-token": "",
     "exchanges": {
         "binance": {
             "api-key": "your-api-key-here",
@@ -13,7 +14,7 @@
     },
     "metrics": {
         "enabled": true,
-        "metrics-bot-id": "61b9efde1fbeb749e428f64c"
+        "metrics-bot-id": "61c499081fbeb749e428f725"
     },
     "notification": {
         "global-info": true,
