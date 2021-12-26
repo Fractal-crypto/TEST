@@ -15,7 +15,7 @@
 #  License along with OctoBot. If not, see <https://www.gnu.org/licenses/>.
 import octobot.constants as constants
 import octobot.commands as commands
-import octobot.community
+# import octobot.community
 
 
 class OctoBotAPI:
@@ -65,8 +65,8 @@ class OctoBotAPI:
     def get_aiohttp_session(self) -> object:
         return self._octobot.get_aiohttp_session()
 
-    def get_community_auth(self) -> octobot.community.CommunityAuthentication:
-        return self._octobot.community_auth
+    # def get_community_auth(self) -> octobot.community.CommunityAuthentication:
+    #     return self._octobot.community_auth
 
     def run_in_main_asyncio_loop(self, coroutine):
         return self._octobot.run_in_main_asyncio_loop(coroutine)
