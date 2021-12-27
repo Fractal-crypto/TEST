@@ -1,0 +1,21 @@
+2021-12-26 18:36:58 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
+2021-12-26 18:36:58 DEBUG  OctoBot Launcher     cli.py:102      Running on Windows:10:AMD64 with python
+2021-12-26 18:36:58 INFO   OctoBot Launcher     cli.py:117      Loading config files...
+2021-12-26 18:36:58 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
+2021-12-26 18:36:58 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
+2021-12-26 18:36:59 INFO   telethon.crypto.libssl libssl.py:79       Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2021-12-26 18:36:59 INFO   telethon.crypto.aes  aes.py:25       cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2021-12-26 18:37:00 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
+2021-12-26 18:37:00 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:00 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:00 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:00 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:00 ERROR  OctoBot Launcher     commands.py:165      'OctoBot' object has no attribute '_init_community'
+Traceback (most recent call last):
+  File "C:\Users\hoon3\GitHub\TEST\octobot\commands.py", line 160, in start_bot
+    await bot.initialize()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\octobot.py", line 102, in initialize
+    await self._start_tools_tasks()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\octobot.py", line 140, in _start_tools_tasks
+    self._init_community()
+AttributeError: 'OctoBot' object has no attribute '_init_community'

@@ -18,4 +18,4 @@ import sys
 from octobot.cli import main
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    main(sys.argv[1:]) # octobot.cli 에서 main 함수

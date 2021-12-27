@@ -38,7 +38,7 @@ import octobot_commons.enums as commons_enums
 import octobot_commons.configuration as configuration
 import octobot_commons.tentacles_management as tentacles_management
 import octobot_backtesting.api as backtesting_api
-import octobot.community as community
+# import octobot.community as community
 
 NAME_KEY = "name"
 SYMBOL_KEY = "symbol"
@@ -497,8 +497,8 @@ def manage_metrics(enable_metrics):
     else:
         current_edited_config.config[commons_constants.CONFIG_METRICS][
             commons_constants.CONFIG_ENABLED_OPTION] = enable_metrics
-    if enable_metrics and community.CommunityManager.should_register_bot(current_edited_config):
-        community.CommunityManager.background_get_id_and_register_bot(interfaces_util.get_bot_api())
+    # if enable_metrics and community.CommunityManager.should_register_bot(current_edited_config):
+    #     community.CommunityManager.background_get_id_and_register_bot(interfaces_util.get_bot_api())
     current_edited_config.save()
 
 
@@ -657,8 +657,8 @@ def is_compatible_account(exchange_name: str, api_key, api_sec, api_pass) -> dic
     is_compatible = False
     is_sponsoring = trading_api.is_sponsoring(exchange_name)
     is_configured = False
-    authenticator = interfaces_util.get_bot_api().get_community_auth()
-    is_supporter = authenticator.supports.is_supporting()
+    # authenticator = interfaces_util.get_bot_api().get_community_auth()
+    # is_supporter = authenticator.supports.is_supporting()
     error = None
     if _is_possible_exchange_config(to_check_config):
         is_configured = True
@@ -672,7 +672,7 @@ def is_compatible_account(exchange_name: str, api_key, api_sec, api_pass) -> dic
     return {
         "exchange": exchange_name,
         "compatible": is_compatible,
-        "supporter_account": is_supporter,
+        # "supporter_account": is_supporter,
         "configured": is_configured,
         "supporting": is_sponsoring,
         "error_message": error

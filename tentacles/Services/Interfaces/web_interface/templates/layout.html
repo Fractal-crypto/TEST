@@ -49,7 +49,7 @@
         {% block additional_style %}
         {% endblock additional_style %}
     </head>
-    <body class="bg-dark" style="{% block body_style %}{% endblock body_style %}">
+    <body class="bg-gray" style="{% block body_style %}{% endblock body_style %}">
         <!-- Scripts -->
         <!-- At the beginning of the page : be available for template scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
@@ -120,9 +120,9 @@
                         <li class="nav-item mx-1 px-0 my-auto {% if 'backtesting' == active_page %} active{% endif %}">
                             <a class="nav-link" href="{{ url_for('backtesting') }}">Backtesting</a>
                         </li>
-                        <li class="nav-item mx-1 px-0 my-auto {% if 'community' == active_page %} active{% endif %}">
-                            <a class="nav-link" href="{{ url_for('community') }}">Community</a>
-                        </li>
+<!--                        <li class="nav-item mx-1 px-0 my-auto {% if 'community' == active_page %} active{% endif %}">-->
+<!--                            <a class="nav-link" href="{{ url_for('community') }}">Community</a>-->
+<!--                        </li>-->
                         <li class="nav-item mx-1 px-0 my-auto {% if 'help' == active_page %} active{% endif %}">
                             <a class="nav-link" href="{{ url_for('octobot_help') }}">Help</a>
                         </li>

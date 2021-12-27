@@ -25,7 +25,7 @@ import octobot_services.api as service_api
 import octobot_trading.api as trading_api
 
 import octobot.logger as logger
-import octobot.community as community_manager
+# import octobot.community as community_manager
 import octobot.constants as constants
 import octobot.configuration_manager as configuration_manager
 import octobot.task_manager as task_manager
@@ -67,10 +67,10 @@ class OctoBot:
         self.community_handler = None
 
         # community authentication
-        self.community_auth = community_manager.CommunityAuthentication(
-            constants.OCTOBOT_COMMUNITY_AUTH_URL,
-            config=self.get_edited_config(constants.CONFIG_KEY, dict_only=False),
-        )
+        # self.community_auth = community_manager.CommunityAuthentication(
+        #     constants.OCTOBOT_COMMUNITY_AUTH_URL,
+        #     config=self.get_edited_config(constants.CONFIG_KEY, dict_only=False),
+        # )
 
         # octobot_api to request the current instance
         self.octobot_api = octobot_api.OctoBotAPI(self)
@@ -97,7 +97,7 @@ class OctoBot:
         self.async_loop = None
 
     async def initialize(self):
-        self.community_auth.init_supports()
+        # self.community_auth.init_supports()
         await self.initializer.create()
         await self._start_tools_tasks()
         await logger.init_octobot_chan_logger(self.bot_id)
@@ -133,15 +133,15 @@ class OctoBot:
         await self.service_feed_producer.stop()
         service_api.stop_services()
         await self.interface_producer.stop()
-        await self.community_auth.stop()
+        # await self.community_auth.stop()
         self.logger.info("Shutting down.")
 
     async def _start_tools_tasks(self):
-        self._init_community()
+        # self._init_community()
         await self.task_manager.start_tools_tasks()
 
-    def _init_community(self):
-        self.community_handler = community_manager.CommunityManager(self.octobot_api)
+    # def _init_community(self):
+    #     self.community_handler = community_manager.CommunityManager(self.octobot_api)
 
     def get_edited_config(self, config_key, dict_only=True):
         return self.configuration_manager.get_edited_config(config_key, dict_only)
