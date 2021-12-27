@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac7c4bf7-debf-4cf4-b2a4-3d30f73c8174" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backtesting/data/ExchangeHistoryDataCollector_1640273634.5855823.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backtesting/data/ExchangeHistoryDataCollector_1640273831.239492.data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.10" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.13" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.14" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.15" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.16" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.18" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.19" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.20" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/OctoBot.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/OctoBot.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/OctoBot.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs/OctoBot.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/authentication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/community_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/community_donation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/community_fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/community_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/community_supports.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/community_tentacles_package.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/error_model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/errors_uploader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/initializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/octobot.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/octobot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/octobot_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/octobot_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/octobot/producers/exchange_producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/producers/exchange_producer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/community.py" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/community.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/profiles/daily_trading/specific_config/DailyTradingMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/profiles/daily_trading/specific_config/DailyTradingMode.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22fwKYSzvIuCLecvUB8Yj4ibsuo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TEST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac7c4bf7-debf-4cf4-b2a4-3d30f73c8174" name="Default Changelist" comment="" />
+      <created>1640241885715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640241885715</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640273494418">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1640273494418" />
+    <state width="1259" height="185" key="GridCell.Tab.0.bottom" timestamp="1640242149113">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
+    <state width="1259" height="185" key="GridCell.Tab.0.center" timestamp="1640242149113">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
+    <state width="1259" height="185" key="GridCell.Tab.0.left" timestamp="1640242149113">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
+    <state width="1259" height="185" key="GridCell.Tab.0.right" timestamp="1640242149113">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state width="1259" height="185" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
+    <state x="142" y="5" key="SettingsEditor" timestamp="1640244938038">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="142" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1640244938038" />
+    <state x="347" y="92" width="587" height="536" key="find.popup" timestamp="1640490281091">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="347" y="92" width="587" height="536" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1640490281091" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/octobot/backtesting/abstract_backtesting_test.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/__init__.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
