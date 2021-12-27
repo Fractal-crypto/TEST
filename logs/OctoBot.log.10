@@ -1,233 +1,371 @@
-2021-12-26 18:59:31 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
-2021-12-26 18:59:31 DEBUG  OctoBot Launcher     cli.py:102      Running on Windows:10:AMD64 with python
-2021-12-26 18:59:31 INFO   OctoBot Launcher     cli.py:117      Loading config files...
-2021-12-26 18:59:31 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
-2021-12-26 18:59:31 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
-2021-12-26 18:59:32 INFO   telethon.crypto.libssl libssl.py:79       Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
-2021-12-26 18:59:32 INFO   telethon.crypto.aes  aes.py:25       cryptg module not installed and libssl not found, falling back to (slower) Python encryption
-2021-12-26 18:59:34 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
-2021-12-26 18:59:34 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-26 18:59:34 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-26 18:59:34 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-26 18:59:34 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-26 18:59:34 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: ['notification', 'error'] action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-26 18:59:34 DEBUG  EvaluatorProducer    octobot_channel.py:38       Pausing...
-2021-12-26 18:59:34 DEBUG  MatrixChannel        logger.py:160      Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=*, evaluator_type=*]
-2021-12-26 18:59:34 DEBUG  ExchangeProducer     octobot_channel.py:38       Pausing...
-2021-12-26 18:59:34 DEBUG  ServiceFeedProducer  octobot_channel.py:38       Pausing...
-2021-12-26 18:59:34 DEBUG  InterfaceProducer    octobot_channel.py:38       Pausing...
-2021-12-26 18:59:34 WARNING CCXTExchange[binance] events.py:81       Exchange configuration tokens are not set yet, to use OctoBot's real trader's features, please enter your api tokens in exchange configuration
-2021-12-26 18:59:34 WARNING CCXTExchange[binance] events.py:81       No exchange API key set for binance. Enter your account details to enable real trading on this exchange.
-2021-12-26 18:59:34 ERROR  CCXTExchange[binance] events.py:81       Exchange configuration is invalid : please check your configuration ! (AuthenticationError: requires `apiKey`)
-2021-12-26 18:59:34 INFO   WebService           abstract_service.py:162      Interface successfully initialized and accessible at: http://172.29.192.1:5001.
-2021-12-26 18:59:34 DEBUG  NotificationChannelProducer abstract_notifier.py:151      Pausing...
-2021-12-26 18:59:34 DEBUG  NotificationChannelProducer abstract_notifier.py:79       Resuming...
-2021-12-26 18:59:34 DEBUG  WebNotifier          abstract_notifier.py:80       Registered as notification consumer
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.google_service_feed.google_feed.GoogleServiceFeed object at 0x000001CB97666940>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.reddit_service_feed.reddit_feed.RedditServiceFeed object at 0x000001CB976F8B20>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.telegram_api_service_feed.telegram_api_feed.TelegramApiServiceFeed object at 0x000001CB976F8AC0>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.telegram_service_feed.telegram_feed.TelegramServiceFeed object at 0x000001CB976F8A60>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.trading_view_service_feed.trading_view_feed.TradingViewServiceFeed object at 0x000001CB976F8760>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <TwitterServiceFeed(TwitterServiceFeed, initial)>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = interface || DATA = {'instance': <WebInterface(WebInterface, started 17628)>} 
-2021-12-26 18:59:34 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = notification || DATA = {'instance': <tentacles.Services.Notifiers.web_notifier.web.WebNotifier object at 0x000001CB9764EF40>} 
-2021-12-26 18:59:34 DEBUG  WebNotifier          abstract_notifier.py:60       Publishing notification: [Notification] title: , text: OctoBot 0.4.3 is starting ..., level: NotificationLevel.INFO, markdown_format: ITALIC, category: global-info, linked_notification: None
-2021-12-26 18:59:35 ERROR  CCXTExchange[binance] events.py:81       Exchange configuration is invalid : please check your configuration ! (AuthenticationError: requires `apiKey`)
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling trades
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling l2_book
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling l3_book
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling book_delta
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling book_ticker
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling open_interest
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling mini_ticker
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling ticker
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling funding
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling mark_price
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling volume
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling liquidations
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling futures_index
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling candle
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling kline
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling position
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling portfolio
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling trade
-2021-12-26 18:59:36 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling orders
-2021-12-26 18:59:36 WARNING WebSocket - binance  events.py:81       Exchange configuration tokens are not set yet, to use OctoBot's real trader's features, please enter your api tokens in exchange configuration
-2021-12-26 18:59:37 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1d
-2021-12-26 18:59:37 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 4h
-2021-12-26 18:59:37 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1h
-2021-12-26 18:59:37 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1m
-2021-12-26 18:59:37 DEBUG  WebSocket - binance  thread.py:57       Starting websocket client with 4 feeds.
-2021-12-26 18:59:37 INFO   ExchangeManager      events.py:81       CryptofeedWebSocketExchange connected to Binance
-2021-12-26 18:59:37 DEBUG  OrderBookUpdater[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  MarkPriceUpdater[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  FundingUpdater[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  OrdersUpdaterSimulator[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  BalanceProfitabilityUpdater events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  PositionsUpdaterSimulator[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 INFO   PortfolioManager     events.py:81       Current Portfolio : {}
-2021-12-26 18:59:37 DEBUG  Trader[binance]      events.py:81       Enabled on binance
-2021-12-26 18:59:37 DEBUG  DailyTradingModeProducer daily_trading.py:51       Pausing...
-2021-12-26 18:59:37 DEBUG  ModeChannel[binance] daily_trading.py:56       Consumer started for : [trading_mode_name=DailyTradingMode, state=*, cryptocurrency=*, symbol=BTC/USDT, time_frame=*]
-2021-12-26 18:59:37 DEBUG  TradingModeFactory[binance] events.py:81       DailyTradingMode started for [cryptocurrency=*, symbol=BTC/USDT, time_frame=*]
-2021-12-26 18:59:37 DEBUG  OrderBookUpdater[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  MarkPriceUpdater[binance] events.py:81       Pausing...
-2021-12-26 18:59:37 DEBUG  RecentTradeChannel[binance] events.py:81       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  BalanceChannel[binance] events.py:81       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  MarkPriceChannel[binance] events.py:81       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  MarkPriceUpdater[binance] events.py:81       Resuming...
-2021-12-26 18:59:37 DEBUG  MatrixChannel        events.py:81       Consumer started for : [matrix_id=d62218de-7968-48fb-8132-40a535429bae, cryptocurrency=*, symbol=BTC/USDT, time_frame=*, evaluator_name=*, exchange_name=binance, evaluator_type=STRATEGIES]
-2021-12-26 18:59:37 DEBUG  TickerChannel[binance] logger.py:97       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  MiniTickerChannel[binance] logger.py:101      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  RecentTradeChannel[binance] logger.py:105      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OrderBookChannel[binance] logger.py:109      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OrderBookTickerChannel[binance] logger.py:113      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  KlineChannel[binance] logger.py:117      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OHLCVChannel[binance] logger.py:121      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  FundingChannel[binance] logger.py:125      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  MarkPriceChannel[binance] logger.py:129      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  BalanceChannel[binance] logger.py:133      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  BalanceProfitabilityChannel[binance] logger.py:137      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  BalanceProfitabilityUpdater logger.py:137      Resuming...
-2021-12-26 18:59:37 DEBUG  TradesChannel[binance] logger.py:141      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  LiquidationsChannel[binance] logger.py:145      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  PositionsChannel[binance] logger.py:149      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  PositionsUpdaterSimulator[binance] logger.py:149      Resuming...
-2021-12-26 18:59:37 DEBUG  OrdersChannel[binance] logger.py:153      Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OrdersUpdaterSimulator[binance] logger.py:153      Resuming...
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = exchange || DATA = {'exchange_id': '0d4eea41-a97c-4f7e-8614-c2f542781ccc'} 
-2021-12-26 18:59:37 DEBUG  RecentTradeChannel[binance] events.py:81       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  TickerChannel[binance] events.py:81       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
-2021-12-26 18:59:37 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
-2021-12-26 18:59:37 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
-2021-12-26 18:59:37 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
-2021-12-26 18:59:37 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
-2021-12-26 18:59:37 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
-2021-12-26 18:59:37 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  DoubleMovingAverageTrendEvaluator abstract_evaluator.py:243      Evaluator started
-2021-12-26 18:59:37 DEBUG  MatrixChannel        strategy_evaluator.py:53       Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=binance, evaluator_type=*]
-2021-12-26 18:59:37 DEBUG  SimpleStrategyEvaluator abstract_evaluator.py:243      Evaluator started
-2021-12-26 18:59:37 DEBUG  TradesChannel[binance] channels.py:35       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OHLCVChannel[binance] channels.py:35       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OrdersChannel[binance] channels.py:35       Consumer started for symbol *
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = evaluator || DATA = {'matrix_id': 'd62218de-7968-48fb-8132-40a535429bae'} 
-2021-12-26 18:59:37 INFO   GoogleServiceFeed    abstract_service_feed.py:124      Initializing feed reception ...
-2021-12-26 18:59:37 INFO   GoogleServiceFeed    abstract_service_feed.py:119      Nothing to monitor, feed is closing.
-2021-12-26 18:59:37 INFO   ServiceFactory       service_factory.py:54       RedditService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
-2021-12-26 18:59:37 DEBUG  RedditServiceFeed    abstract_service_user.py:59       Impossible to start RedditServiceFeed: required service RedditService is not available.
-2021-12-26 18:59:37 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start RedditServiceFeed: missing service(s) configuration.
-2021-12-26 18:59:37 INFO   ServiceFactory       service_factory.py:54       TelegramApiService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
-2021-12-26 18:59:37 DEBUG  TelegramApiServiceFeed abstract_service_user.py:59       Impossible to start TelegramApiServiceFeed: required service TelegramApiService is not available.
-2021-12-26 18:59:37 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TelegramApiServiceFeed: missing service(s) configuration.
-2021-12-26 18:59:37 INFO   ServiceFactory       service_factory.py:54       TelegramService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
-2021-12-26 18:59:37 DEBUG  TelegramServiceFeed  abstract_service_user.py:59       Impossible to start TelegramServiceFeed: required service TelegramService is not available.
-2021-12-26 18:59:37 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TelegramServiceFeed: missing service(s) configuration.
-2021-12-26 18:59:37 INFO   ServiceFactory       service_factory.py:54       WebHookService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
-2021-12-26 18:59:37 DEBUG  TradingViewServiceFeed abstract_service_user.py:59       Impossible to start TradingViewServiceFeed: required service WebHookService is not available.
-2021-12-26 18:59:37 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TradingViewServiceFeed: missing service(s) configuration.
-2021-12-26 18:59:37 INFO   ServiceFactory       service_factory.py:54       TwitterService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
-2021-12-26 18:59:37 DEBUG  TwitterServiceFeed   abstract_service_user.py:59       Impossible to start TwitterServiceFeed: required service TwitterService is not available.
-2021-12-26 18:59:37 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TwitterServiceFeed: missing service(s) configuration.
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': True} 
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
-2021-12-26 18:59:37 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
-2021-12-26 18:59:38 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_DAY
-2021-12-26 18:59:38 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.FOUR_HOURS
-2021-12-26 18:59:38 DEBUG  PythonUpdater        updater.py:35       Error when comparing latest with current OctoBot version: expected string or bytes-like object
-2021-12-26 18:59:38 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_HOUR
-2021-12-26 18:59:39 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_MINUTE
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50006.73, 10384.65764]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50006.73, 1509.59797]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50006.73, 767.01393]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50006.73, 17.19375]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50006.73, 'last': 50006.73, 'previousClose': None, 'baseVolume': 17.19375, 'timestamp': 1640512778.888}
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50006.73
-2021-12-26 18:59:39 DEBUG  OHLCVUpdater[binance] events.py:81       Pushing completed initialization candles
-2021-12-26 18:59:39 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history initial fetch completed
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || CANDLE = [1640390400.0, 50819.99, 51156.23, 50142.32, 50399.66, 19135.51613]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || CANDLE = [1640491200.0, 49675.56, 49977.07, 49600.95, 49930.39, 2508.08219]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || CANDLE = [1640505600.0, 49930.39, 50089.93, 49826.01, 49881.98, 742.58404]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || CANDLE = [1640512680.0, 50006.85, 50038.13, 50005.05, 50038.11, 13.15083]
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1d || NOTE = -0.2536676098096855 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1d || NOTE = 0.25028843283872193 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 4h || NOTE = -0.157346771620536 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1h || NOTE = -0.08232435072984391 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 4h || NOTE = -0.25660812211454487 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1h || NOTE = -0.8318814215542565 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.22192330716502415 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.22192330716502415 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.22192330716502415 [MATRIX id = d62218de-7968-48fb-8132-40a535429bae] 
-2021-12-26 18:59:39 INFO   DailyTradingModeProducer daily_trading.py:473      [BTC/USDT] new state: LONG
-2021-12-26 18:59:39 DEBUG  DailyTradingModeConsumer events.py:81       Entering create_order_if_possible for BTC/USDT
-2021-12-26 18:59:39 DEBUG  DailyTradingModeConsumer events.py:81       Skipping order creation for BTC/USDT: not enough available funds
-2021-12-26 18:59:39 DEBUG  DailyTradingModeConsumer events.py:81       Exiting create_order_if_possible for BTC/USDT
-2021-12-26 18:59:39 DEBUG  WebNotifier          abstract_notifier.py:60       Publishing notification: [Notification] title: OCTOBOT ALERT : #BTC/USDT, text: Result : LONG
-Evaluation : -0.22192330716502415, level: NotificationLevel.INFO, markdown_format: IGNORE, category: price-alerts, linked_notification: None
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50010.15, 10384.76383]
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50010.15, 1509.70416]
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50010.15, 767.12012]
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50010.15, 17.29994]
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50010.15, 'last': 50010.15, 'previousClose': None, 'baseVolume': 17.29994, 'timestamp': 1640512780.919}
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50010.15
-2021-12-26 18:59:40 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50004.61, 10385.08881]
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50004.61, 1510.02914]
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50004.61, 767.4451]
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50004.61, 17.62492]
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50004.61, 'last': 50004.61, 'previousClose': None, 'baseVolume': 17.62492, 'timestamp': 1640512783.124}
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50004.61
-2021-12-26 18:59:43 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50011.19, 10386.98032]
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50011.19, 1511.92065]
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50011.19, 769.33661]
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50011.19, 19.51643]
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50011.19, 'last': 50011.19, 'previousClose': None, 'baseVolume': 19.51643, 'timestamp': 1640512785.145}
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50011.19
-2021-12-26 18:59:45 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50012.35, 10387.54117]
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50012.35, 1512.4815]
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50012.35, 769.89746]
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50012.35, 20.07728]
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50012.35, 'last': 50012.35, 'previousClose': None, 'baseVolume': 20.07728, 'timestamp': 1640512787.236}
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50012.35
-2021-12-26 18:59:47 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50013.25, 10387.74908]
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50013.25, 1512.68941]
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50013.25, 770.10537]
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50013.25, 20.28519]
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50013.25, 'last': 50013.25, 'previousClose': None, 'baseVolume': 20.28519, 'timestamp': 1640512789.343}
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50013.25
-2021-12-26 18:59:49 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50011.35, 10388.00822]
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50011.35, 1512.94855]
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50011.35, 770.36451]
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50011.35, 20.54433]
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50011.35, 'last': 50011.35, 'previousClose': None, 'baseVolume': 20.54433, 'timestamp': 1640512791.4}
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50011.35
-2021-12-26 18:59:51 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50015.11, 10388.26681]
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50015.11, 1513.20714]
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50015.11, 770.6231]
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50015.11, 20.80292]
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50015.11, 'last': 50015.11, 'previousClose': None, 'baseVolume': 20.80292, 'timestamp': 1640512793.683}
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50015.11
-2021-12-26 18:59:53 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50014.17, 10388.30281]
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50014.17, 1513.24314]
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50014.17, 770.6591]
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50014.17, 20.83892]
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50014.17, 'last': 50014.17, 'previousClose': None, 'baseVolume': 20.83892, 'timestamp': 1640512796.463}
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50014.17
-2021-12-26 18:59:56 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50012.61, 10389.94386]
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50012.61, 1514.88419]
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50012.61, 772.30015]
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50012.61, 22.47997]
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50065.76, 'low': 49996.2, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50038.11, 'close': 50012.61, 'last': 50012.61, 'previousClose': None, 'baseVolume': 22.47997, 'timestamp': 1640512798.629}
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50012.61
-2021-12-26 18:59:58 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
+2021-12-26 19:00:56 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
+2021-12-26 19:00:56 DEBUG  OctoBot Launcher     cli.py:102      Running on Windows:10:AMD64 with python
+2021-12-26 19:00:56 INFO   OctoBot Launcher     cli.py:117      Loading config files...
+2021-12-26 19:00:56 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
+2021-12-26 19:00:56 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
+2021-12-26 19:00:57 INFO   telethon.crypto.libssl libssl.py:79       Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2021-12-26 19:00:57 INFO   telethon.crypto.aes  aes.py:25       cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2021-12-26 19:00:59 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
+2021-12-26 19:00:59 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 19:00:59 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 19:00:59 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 19:00:59 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 19:00:59 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: ['notification', 'error'] action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 19:00:59 DEBUG  EvaluatorProducer    octobot_channel.py:38       Pausing...
+2021-12-26 19:00:59 DEBUG  MatrixChannel        logger.py:160      Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=*, evaluator_type=*]
+2021-12-26 19:00:59 DEBUG  ExchangeProducer     octobot_channel.py:38       Pausing...
+2021-12-26 19:00:59 DEBUG  ServiceFeedProducer  octobot_channel.py:38       Pausing...
+2021-12-26 19:00:59 DEBUG  InterfaceProducer    octobot_channel.py:38       Pausing...
+2021-12-26 19:00:59 WARNING CCXTExchange[binance] events.py:81       Exchange configuration tokens are not set yet, to use OctoBot's real trader's features, please enter your api tokens in exchange configuration
+2021-12-26 19:00:59 INFO   WebService           abstract_service.py:162      Interface successfully initialized and accessible at: http://172.29.192.1:5001.
+2021-12-26 19:00:59 DEBUG  NotificationChannelProducer abstract_notifier.py:151      Pausing...
+2021-12-26 19:00:59 DEBUG  NotificationChannelProducer abstract_notifier.py:79       Resuming...
+2021-12-26 19:00:59 DEBUG  WebNotifier          abstract_notifier.py:80       Registered as notification consumer
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.google_service_feed.google_feed.GoogleServiceFeed object at 0x00000232A43E68E0>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.reddit_service_feed.reddit_feed.RedditServiceFeed object at 0x00000232A4478A00>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.telegram_api_service_feed.telegram_api_feed.TelegramApiServiceFeed object at 0x00000232A4478A60>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.telegram_service_feed.telegram_feed.TelegramServiceFeed object at 0x00000232A4478AC0>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.trading_view_service_feed.trading_view_feed.TradingViewServiceFeed object at 0x00000232A4478B20>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <TwitterServiceFeed(TwitterServiceFeed, initial)>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = interface || DATA = {'instance': <WebInterface(WebInterface, started 9204)>} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = notification || DATA = {'instance': <tentacles.Services.Notifiers.web_notifier.web.WebNotifier object at 0x00000232A43CEEE0>} 
+2021-12-26 19:00:59 DEBUG  WebNotifier          abstract_notifier.py:60       Publishing notification: [Notification] title: , text: OctoBot 0.4.3 is starting ..., level: NotificationLevel.INFO, markdown_format: ITALIC, category: global-info, linked_notification: None
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling trades
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling l2_book
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling l3_book
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling book_delta
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling book_ticker
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling open_interest
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling mini_ticker
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling ticker
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling funding
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling mark_price
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling volume
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling liquidations
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling futures_index
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling candle
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling kline
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling position
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling portfolio
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling trade
+2021-12-26 19:00:59 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling orders
+2021-12-26 19:00:59 WARNING WebSocket - binance  events.py:81       Exchange configuration tokens are not set yet, to use OctoBot's real trader's features, please enter your api tokens in exchange configuration
+2021-12-26 19:00:59 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1d
+2021-12-26 19:00:59 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 4h
+2021-12-26 19:00:59 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1h
+2021-12-26 19:00:59 INFO   ExchangeManager      events.py:81       CryptofeedWebSocketExchange connected to Binance
+2021-12-26 19:00:59 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1m
+2021-12-26 19:00:59 DEBUG  OrderBookUpdater[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  MarkPriceUpdater[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  FundingUpdater[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  OrdersUpdaterSimulator[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  BalanceProfitabilityUpdater events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  PositionsUpdaterSimulator[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  SpotPortfolioSimulator[binance] events.py:81       Portfolio updated | Current Portfolio : {'BTC': {'available': 10.0, 'total': 10.0}, 'USDT': {'available': 1000.0, 'total': 1000.0}}
+2021-12-26 19:00:59 DEBUG  WebSocket - binance  thread.py:57       Starting websocket client with 4 feeds.
+2021-12-26 19:00:59 INFO   PortfolioManager     events.py:81       Current Portfolio : {'BTC': {'available': Decimal('10'), 'total': Decimal('10')}, 'USDT': {'available': Decimal('1000'), 'total': Decimal('1000')}}
+2021-12-26 19:00:59 DEBUG  TraderSimulator[binance] events.py:81       Enabled on binance
+2021-12-26 19:00:59 DEBUG  DailyTradingModeProducer daily_trading.py:51       Pausing...
+2021-12-26 19:00:59 DEBUG  ModeChannel[binance] daily_trading.py:56       Consumer started for : [trading_mode_name=DailyTradingMode, state=*, cryptocurrency=*, symbol=BTC/USDT, time_frame=*]
+2021-12-26 19:00:59 DEBUG  TradingModeFactory[binance] events.py:81       DailyTradingMode started for [cryptocurrency=*, symbol=BTC/USDT, time_frame=*]
+2021-12-26 19:00:59 DEBUG  OrderBookUpdater[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  MarkPriceUpdater[binance] events.py:81       Pausing...
+2021-12-26 19:00:59 DEBUG  RecentTradeChannel[binance] events.py:81       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  BalanceChannel[binance] events.py:81       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  MarkPriceChannel[binance] events.py:81       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  MarkPriceUpdater[binance] events.py:81       Resuming...
+2021-12-26 19:00:59 DEBUG  MatrixChannel        events.py:81       Consumer started for : [matrix_id=f39b9de9-2593-4977-a56d-7ba11be31011, cryptocurrency=*, symbol=BTC/USDT, time_frame=*, evaluator_name=*, exchange_name=binance, evaluator_type=STRATEGIES]
+2021-12-26 19:00:59 DEBUG  TickerChannel[binance] logger.py:97       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  MiniTickerChannel[binance] logger.py:101      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  RecentTradeChannel[binance] logger.py:105      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OrderBookChannel[binance] logger.py:109      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OrderBookTickerChannel[binance] logger.py:113      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  KlineChannel[binance] logger.py:117      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OHLCVChannel[binance] logger.py:121      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  FundingChannel[binance] logger.py:125      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  MarkPriceChannel[binance] logger.py:129      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  BalanceChannel[binance] logger.py:133      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  BalanceProfitabilityChannel[binance] logger.py:137      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  BalanceProfitabilityUpdater logger.py:137      Resuming...
+2021-12-26 19:00:59 DEBUG  TradesChannel[binance] logger.py:141      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  LiquidationsChannel[binance] logger.py:145      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  PositionsChannel[binance] logger.py:149      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  PositionsUpdaterSimulator[binance] logger.py:149      Resuming...
+2021-12-26 19:00:59 DEBUG  OrdersChannel[binance] logger.py:153      Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OrdersUpdaterSimulator[binance] logger.py:153      Resuming...
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = exchange || DATA = {'exchange_id': '3d4b8e7b-f61c-43c1-b3b9-fed98b5b9ab8'} 
+2021-12-26 19:00:59 DEBUG  RecentTradeChannel[binance] events.py:81       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  TickerChannel[binance] events.py:81       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
+2021-12-26 19:00:59 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
+2021-12-26 19:00:59 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
+2021-12-26 19:00:59 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
+2021-12-26 19:00:59 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
+2021-12-26 19:00:59 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
+2021-12-26 19:00:59 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  DoubleMovingAverageTrendEvaluator abstract_evaluator.py:243      Evaluator started
+2021-12-26 19:00:59 DEBUG  MatrixChannel        strategy_evaluator.py:53       Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=binance, evaluator_type=*]
+2021-12-26 19:00:59 DEBUG  SimpleStrategyEvaluator abstract_evaluator.py:243      Evaluator started
+2021-12-26 19:00:59 DEBUG  TradesChannel[binance] channels.py:35       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OHLCVChannel[binance] channels.py:35       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OrdersChannel[binance] channels.py:35       Consumer started for symbol *
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = evaluator || DATA = {'matrix_id': 'f39b9de9-2593-4977-a56d-7ba11be31011'} 
+2021-12-26 19:00:59 INFO   GoogleServiceFeed    abstract_service_feed.py:124      Initializing feed reception ...
+2021-12-26 19:00:59 INFO   GoogleServiceFeed    abstract_service_feed.py:119      Nothing to monitor, feed is closing.
+2021-12-26 19:00:59 INFO   ServiceFactory       service_factory.py:54       RedditService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2021-12-26 19:00:59 DEBUG  RedditServiceFeed    abstract_service_user.py:59       Impossible to start RedditServiceFeed: required service RedditService is not available.
+2021-12-26 19:00:59 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start RedditServiceFeed: missing service(s) configuration.
+2021-12-26 19:00:59 INFO   ServiceFactory       service_factory.py:54       TelegramApiService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2021-12-26 19:00:59 DEBUG  TelegramApiServiceFeed abstract_service_user.py:59       Impossible to start TelegramApiServiceFeed: required service TelegramApiService is not available.
+2021-12-26 19:00:59 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TelegramApiServiceFeed: missing service(s) configuration.
+2021-12-26 19:00:59 INFO   ServiceFactory       service_factory.py:54       TelegramService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2021-12-26 19:00:59 DEBUG  TelegramServiceFeed  abstract_service_user.py:59       Impossible to start TelegramServiceFeed: required service TelegramService is not available.
+2021-12-26 19:00:59 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TelegramServiceFeed: missing service(s) configuration.
+2021-12-26 19:00:59 INFO   ServiceFactory       service_factory.py:54       WebHookService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2021-12-26 19:00:59 DEBUG  TradingViewServiceFeed abstract_service_user.py:59       Impossible to start TradingViewServiceFeed: required service WebHookService is not available.
+2021-12-26 19:00:59 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TradingViewServiceFeed: missing service(s) configuration.
+2021-12-26 19:00:59 INFO   ServiceFactory       service_factory.py:54       TwitterService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2021-12-26 19:00:59 DEBUG  TwitterServiceFeed   abstract_service_user.py:59       Impossible to start TwitterServiceFeed: required service TwitterService is not available.
+2021-12-26 19:00:59 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TwitterServiceFeed: missing service(s) configuration.
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': True} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2021-12-26 19:00:59 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2021-12-26 19:01:00 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.FOUR_HOURS
+2021-12-26 19:01:00 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_DAY
+2021-12-26 19:01:00 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_HOUR
+2021-12-26 19:01:01 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_MINUTE
+2021-12-26 19:01:01 DEBUG  OHLCVUpdater[binance] events.py:81       Pushing completed initialization candles
+2021-12-26 19:01:01 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history initial fetch completed
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || CANDLE = [1640390400.0, 50819.99, 51156.23, 50142.32, 50399.66, 19135.51613]
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || CANDLE = [1640491200.0, 49675.56, 49977.07, 49600.95, 49930.39, 2508.08219]
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || CANDLE = [1640509200.0, 49881.97, 50169.17, 49840.2, 50012.6, 772.37161]
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || CANDLE = [1640512740.0, 50038.11, 50065.76, 49996.2, 50012.6, 22.55143]
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1d || NOTE = -0.2536676098096855 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1d || NOTE = 0.25028843283872193 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 4h || NOTE = -0.157346771620536 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1h || NOTE = -0.053160068125672665 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 4h || NOTE = -0.25660812211454487 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1h || NOTE = -1 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.24508235647195287 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.24508235647195287 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.24508235647195287 [MATRIX id = f39b9de9-2593-4977-a56d-7ba11be31011] 
+2021-12-26 19:01:01 INFO   DailyTradingModeProducer daily_trading.py:473      [BTC/USDT] new state: LONG
+2021-12-26 19:01:01 DEBUG  DailyTradingModeConsumer events.py:81       Entering create_order_if_possible for BTC/USDT
+2021-12-26 19:01:01 DEBUG  WebNotifier          abstract_notifier.py:60       Publishing notification: [Notification] title: OCTOBOT ALERT : #BTC/USDT, text: Result : LONG
+Evaluation : -0.24508235647195287, level: NotificationLevel.INFO, markdown_format: IGNORE, category: price-alerts, linked_notification: None
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50021.21, 1532.981]
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50021.22, 50013.25, 50021.21, 0.25831]
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50021.22, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50021.21, 'last': 50021.21, 'previousClose': None, 'baseVolume': 0.25831, 'timestamp': 1640512862.092}
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50021.21
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50030.19, 50006.86, 50021.21, 18.02535]
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50021.21, 10408.04067]
+2021-12-26 19:01:02 DEBUG  TraderSimulator[binance] daily_trading.py:363      Order creation : BTC/USDT | BUY_LIMIT | Price : 49300.31 | Quantity : 0.00475 | State : Unknown | id : 2d574c2f-9472-4438-a583-b1acb51389dc 
+2021-12-26 19:01:02 INFO   BuyLimitOrder | 2d574c2f-9472-4438-a583-b1acb51389dc daily_trading.py:363      BTC/USDT | BUY_LIMIT | Price : 49300.31 | Quantity : 0.00475 | State : open | id : 2d574c2f-9472-4438-a583-b1acb51389dc open on binance
+2021-12-26 19:01:02 DEBUG  DailyTradingModeConsumer events.py:81       Exiting create_order_if_possible for BTC/USDT
+2021-12-26 19:01:02 DEBUG  OctoBot Channel      logger.py:320      ORDERS : EXCHANGE = binance || SYMBOL = BTC/USDT || BUY LIMIT: 0.00475 BTC at 49300.31 USDT on Binance || status = open || CREATED = False || FROM_BOT = True
+2021-12-26 19:01:02 DEBUG  WebNotifier          abstract_notifier.py:60       Publishing notification: [Notification] title: Order creation, text: - BUY LIMIT: 0.00475 BTC at 49300.31 USDT on Binance, level: NotificationLevel.INFO, markdown_format: IGNORE, category: trades, linked_notification: None
+2021-12-26 19:01:02 DEBUG  PythonUpdater        updater.py:35       Error when comparing latest with current OctoBot version: expected string or bytes-like object
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50021.79, 1533.18353]
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50023.89, 50013.25, 50021.79, 0.46084]
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50023.89, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50021.79, 'last': 50021.79, 'previousClose': None, 'baseVolume': 0.46084, 'timestamp': 1640512864.229}
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50021.79
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 5.8 USDT (0.00116%)
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50030.19, 50006.86, 50021.79, 18.22788]
+2021-12-26 19:01:04 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50021.79, 10408.2432]
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50019.0, 1533.24073]
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50023.89, 50013.25, 50019.0, 0.51804]
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50023.89, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50019.0, 'last': 50019.0, 'previousClose': None, 'baseVolume': 0.51804, 'timestamp': 1640512866.261}
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50030.19, 50006.86, 50019.0, 18.28508]
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50019.0, 10408.3004]
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50019.0
+2021-12-26 19:01:06 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = -22.1 USDT (-0.00441%)
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50030.0, 1534.35623]
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50030.0, 50013.25, 50030.0, 1.63354]
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50030.0, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50030.0, 'last': 50030.0, 'previousClose': None, 'baseVolume': 1.63354, 'timestamp': 1640512868.612}
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50030.0
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50030.19, 50006.86, 50030.0, 19.40058]
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50030.0, 10409.4159]
+2021-12-26 19:01:08 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 87.9 USDT (0.01754%)
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50034.88, 1534.64601]
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50034.88, 50013.25, 50034.88, 1.92332]
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50034.88, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50034.88, 'last': 50034.88, 'previousClose': None, 'baseVolume': 1.92332, 'timestamp': 1640512870.625}
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50034.88
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50034.88, 50006.86, 50034.88, 19.69036]
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50034.88, 10409.70568]
+2021-12-26 19:01:10 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 136.7 USDT (0.02727%)
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50046.16, 1534.87049]
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50046.16, 50013.25, 50046.16, 2.1478]
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50046.16, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50046.16, 'last': 50046.16, 'previousClose': None, 'baseVolume': 2.1478, 'timestamp': 1640512872.754}
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50046.16
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 249.5 USDT (0.04978%)
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50046.16, 50006.86, 50046.16, 19.91484]
+2021-12-26 19:01:12 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50046.16, 10409.93016]
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50046.15, 1534.9815]
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50046.16, 50013.25, 50046.15, 2.25881]
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50046.16, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50046.15, 'last': 50046.15, 'previousClose': None, 'baseVolume': 2.25881, 'timestamp': 1640512874.903}
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50046.16, 50006.86, 50046.15, 20.02585]
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50046.15, 10410.04117]
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50046.15
+2021-12-26 19:01:14 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 249.4 USDT (0.04976%)
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50042.07, 1536.68602]
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50046.16, 50013.25, 50042.07, 3.96333]
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50046.16, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50042.07, 'last': 50042.07, 'previousClose': None, 'baseVolume': 3.96333, 'timestamp': 1640512877.02}
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50042.07
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50046.16, 50006.86, 50042.07, 21.73037]
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50042.07, 10411.74569]
+2021-12-26 19:01:16 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 208.6 USDT (0.04162%)
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50046.16, 1536.89785]
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50046.16, 50013.25, 50046.16, 4.17516]
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50046.16, 50006.86, 50046.16, 21.9422]
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50046.16, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50046.16, 'last': 50046.16, 'previousClose': None, 'baseVolume': 4.17516, 'timestamp': 1640512879.076}
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50046.16
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50046.16, 10411.95752]
+2021-12-26 19:01:19 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 249.5 USDT (0.04978%)
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50046.16, 1537.00525]
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50046.16, 50013.25, 50046.16, 4.28256]
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50046.16, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50046.16, 'last': 50046.16, 'previousClose': None, 'baseVolume': 4.28256, 'timestamp': 1640512881.13}
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50046.16
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 249.5 USDT (0.04978%)
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50046.16, 50006.86, 50046.16, 22.0496]
+2021-12-26 19:01:21 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50046.16, 10412.06492]
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50046.16, 1537.07837]
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50046.16, 50013.25, 50046.16, 4.35568]
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50046.16, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50046.16, 'last': 50046.16, 'previousClose': None, 'baseVolume': 4.35568, 'timestamp': 1640512883.192}
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50046.16
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 249.5 USDT (0.04978%)
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50046.16, 50006.86, 50046.16, 22.12272]
+2021-12-26 19:01:23 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50046.16, 10412.13804]
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50047.12, 1537.22042]
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50047.12, 50013.25, 50047.12, 4.49773]
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50047.12, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50047.12, 'last': 50047.12, 'previousClose': None, 'baseVolume': 4.49773, 'timestamp': 1640512885.427}
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50047.12
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 259.1 USDT (0.05169%)
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50047.12, 50006.86, 50047.12, 22.26477]
+2021-12-26 19:01:25 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50047.12, 10412.28009]
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50058.25, 1537.6361]
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50058.25, 50013.25, 50058.25, 4.91341]
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50058.25, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50058.25, 'last': 50058.25, 'previousClose': None, 'baseVolume': 4.91341, 'timestamp': 1640512887.43}
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50058.25
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 370.4 USDT (0.0739%)
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50058.25, 50006.86, 50058.25, 22.68045]
+2021-12-26 19:01:27 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50058.25, 10412.69577]
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50051.39, 1537.83212]
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50058.26, 50006.86, 50051.39, 22.87647]
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50051.39, 10412.89179]
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50058.26, 50013.25, 50051.39, 5.10943]
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50058.26, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50051.39, 'last': 50051.39, 'previousClose': None, 'baseVolume': 5.10943, 'timestamp': 1640512889.535}
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50051.39
+2021-12-26 19:01:29 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 301.8 USDT (0.06021%)
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50049.97, 1538.17665]
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50059.99, 50013.25, 50049.97, 5.45396]
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50059.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50049.97, 'last': 50049.97, 'previousClose': None, 'baseVolume': 5.45396, 'timestamp': 1640512891.549}
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50049.97
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50059.99, 50006.86, 50049.97, 23.221]
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50049.97, 10413.23632]
+2021-12-26 19:01:31 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 287.6 USDT (0.05738%)
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50047.88, 1538.2673]
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50059.99, 50013.25, 50047.88, 5.54461]
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50059.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50047.88, 'last': 50047.88, 'previousClose': None, 'baseVolume': 5.54461, 'timestamp': 1640512893.837}
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50047.88
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 266.7 USDT (0.05321%)
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50059.99, 50006.86, 50047.88, 23.31165]
+2021-12-26 19:01:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50047.88, 10413.32697]
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50047.87, 1538.43149]
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50059.99, 50006.86, 50047.87, 23.47584]
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50047.87, 10413.49116]
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50059.99, 50013.25, 50047.87, 5.7088]
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50059.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50047.87, 'last': 50047.87, 'previousClose': None, 'baseVolume': 5.7088, 'timestamp': 1640512895.838}
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50047.87
+2021-12-26 19:01:35 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 266.6 USDT (0.05319%)
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50047.87, 1538.56586]
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50059.99, 50013.25, 50047.87, 5.84317]
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50059.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50047.87, 'last': 50047.87, 'previousClose': None, 'baseVolume': 5.84317, 'timestamp': 1640512897.857}
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50047.87
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 266.6 USDT (0.05319%)
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50059.99, 50006.86, 50047.87, 23.61021]
+2021-12-26 19:01:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50047.87, 10413.62553]
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50053.98, 1539.31223]
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50053.98, 10414.3719]
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50059.99, 50013.25, 50053.98, 6.58954]
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50059.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50053.98, 'last': 50053.98, 'previousClose': None, 'baseVolume': 6.58954, 'timestamp': 1640512899.988}
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50059.99, 50006.86, 50053.98, 24.35658]
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50053.98
+2021-12-26 19:01:39 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 327.7 USDT (0.06538%)
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50055.99, 1539.34835]
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50059.99, 50013.25, 50055.99, 6.62566]
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50059.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50055.99, 'last': 50055.99, 'previousClose': None, 'baseVolume': 6.62566, 'timestamp': 1640512902.476}
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50055.99
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 347.8 USDT (0.06939%)
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50059.99, 50006.86, 50055.99, 24.3927]
+2021-12-26 19:01:42 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50055.99, 10414.40802]
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50059.99, 1539.52877]
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50060.0, 50013.25, 50059.99, 6.80608]
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50060.0, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50059.99, 'last': 50059.99, 'previousClose': None, 'baseVolume': 6.80608, 'timestamp': 1640512904.587}
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50059.99
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 387.8 USDT (0.07737%)
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50060.0, 50006.86, 50059.99, 24.57312]
+2021-12-26 19:01:44 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50059.99, 10414.58844]
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50059.9, 1539.54615]
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50060.0, 50013.25, 50059.9, 6.82346]
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50060.0, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50059.9, 'last': 50059.9, 'previousClose': None, 'baseVolume': 6.82346, 'timestamp': 1640512906.613}
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50059.9
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 386.9 USDT (0.07719%)
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50060.0, 50006.86, 50059.9, 24.5905]
+2021-12-26 19:01:46 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50059.9, 10414.60582]
+2021-12-26 19:01:48 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50064.99, 1540.26399]
+2021-12-26 19:01:48 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50064.99, 50006.86, 50064.99, 25.30834]
+2021-12-26 19:01:48 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50064.99, 10415.32366]
+2021-12-26 19:01:48 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50064.99, 50013.25, 50064.99, 7.5413]
+2021-12-26 19:01:48 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50064.99, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50064.99, 'last': 50064.99, 'previousClose': None, 'baseVolume': 7.5413, 'timestamp': 1640512909.022}
+2021-12-26 19:01:48 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50064.99
+2021-12-26 19:01:49 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 437.8 USDT (0.08735%)
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50073.2, 1540.41899]
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50073.2, 50013.25, 50073.2, 7.6963]
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50073.2, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50073.2, 'last': 50073.2, 'previousClose': None, 'baseVolume': 7.6963, 'timestamp': 1640512911.083}
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50073.2
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 519.9 USDT (0.10373%)
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50073.2, 50006.86, 50073.2, 25.46334]
+2021-12-26 19:01:51 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50073.2, 10415.47866]
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50077.34, 1540.77652]
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50077.35, 50013.25, 50077.34, 8.05383]
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50077.35, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50077.34, 'last': 50077.34, 'previousClose': None, 'baseVolume': 8.05383, 'timestamp': 1640512913.096}
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50077.34
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50077.35, 50006.86, 50077.34, 25.82087]
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50077.34, 10415.83619]
+2021-12-26 19:01:53 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 561.3 USDT (0.11199%)
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50084.3, 1541.07461]
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50084.3, 50013.25, 50084.3, 8.35192]
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50084.3, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50084.3, 'last': 50084.3, 'previousClose': None, 'baseVolume': 8.35192, 'timestamp': 1640512915.099}
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50084.3
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 630.9 USDT (0.12587%)
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50084.3, 50006.86, 50084.3, 26.11896]
+2021-12-26 19:01:55 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50084.3, 10416.13428]
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50074.11, 1541.33842]
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50084.3, 50013.25, 50074.11, 8.61573]
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50084.3, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50074.11, 'last': 50074.11, 'previousClose': None, 'baseVolume': 8.61573, 'timestamp': 1640512917.599}
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50074.11
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 529 USDT (0.10554%)
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50084.3, 50006.86, 50074.11, 26.38277]
+2021-12-26 19:01:57 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50074.11, 10416.39809]
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50066.84, 1542.04648]
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512860.0, 50013.26, 50084.3, 50013.25, 50066.84, 9.32379]
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50084.3, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50066.84, 'last': 50066.84, 'previousClose': None, 'baseVolume': 9.32379, 'timestamp': 1640512919.616}
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50084.3, 50006.86, 50066.84, 27.09083]
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50066.84, 10417.10615]
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50066.84
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 456.3 USDT (0.09104%)
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || CANDLE = [1640512860.0, 50013.26, 50084.3, 50013.25, 50063.06, 9.35924]
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50084.3, 'low': 50013.25, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50013.26, 'close': 50063.06, 'last': 50063.06, 'previousClose': None, 'baseVolume': 9.35924, 'timestamp': 1640512920.002}
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50063.06
+2021-12-26 19:01:59 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 418.5 USDT (0.0835%)
+2021-12-26 19:02:01 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1640505600.0, 49930.39, 50169.17, 49826.01, 50055.06, 1542.20711]
+2021-12-26 19:02:01 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1640512800.0, 50012.61, 50084.3, 50006.86, 50055.06, 27.25146]
+2021-12-26 19:02:01 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1640476800.0, 50399.67, 50672.93, 49600.95, 50055.06, 10417.26678]
+2021-12-26 19:02:02 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1640512920.0, 50063.05, 50063.06, 50055.06, 50055.06, 0.12518]
+2021-12-26 19:02:02 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 50063.06, 'low': 50055.06, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 50063.05, 'close': 50055.06, 'last': 50055.06, 'previousClose': None, 'baseVolume': 0.12518, 'timestamp': 1640512922.047}
+2021-12-26 19:02:02 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 50055.06
+2021-12-26 19:02:02 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 338.5 USDT (0.06754%)

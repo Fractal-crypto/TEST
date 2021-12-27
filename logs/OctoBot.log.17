@@ -1,15 +1,31 @@
-2021-12-26 16:57:29 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
-2021-12-26 16:57:29 DEBUG  OctoBot Launcher     cli.py:102      Running on Windows:10:AMD64 with python
-2021-12-26 16:57:29 INFO   OctoBot Launcher     cli.py:117      Loading config files...
-2021-12-26 16:57:29 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
-2021-12-26 16:57:29 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
-2021-12-26 16:57:30 INFO   telethon.crypto.libssl libssl.py:79       Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
-2021-12-26 16:57:30 INFO   telethon.crypto.aes  aes.py:25       cryptg module not installed and libssl not found, falling back to (slower) Python encryption
-2021-12-26 16:57:31 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
-2021-12-26 16:57:31 ERROR  OctoBot Launcher     commands.py:165      'OctoBot' object has no attribute 'community_auth'
+2021-12-26 18:37:33 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
+2021-12-26 18:37:33 DEBUG  OctoBot Launcher     cli.py:102      Running on Windows:10:AMD64 with python
+2021-12-26 18:37:33 INFO   OctoBot Launcher     cli.py:117      Loading config files...
+2021-12-26 18:37:33 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
+2021-12-26 18:37:33 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
+2021-12-26 18:37:33 INFO   telethon.crypto.libssl libssl.py:79       Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2021-12-26 18:37:33 INFO   telethon.crypto.aes  aes.py:25       cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2021-12-26 18:37:35 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
+2021-12-26 18:37:35 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:35 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:35 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:35 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:35 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: ['notification', 'error'] action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-26 18:37:35 DEBUG  EvaluatorProducer    octobot_channel.py:38       Pausing...
+2021-12-26 18:37:35 DEBUG  MatrixChannel        logger.py:160      Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=*, evaluator_type=*]
+2021-12-26 18:37:35 DEBUG  ExchangeProducer     octobot_channel.py:38       Pausing...
+2021-12-26 18:37:35 ERROR  OctoBot Launcher     commands.py:165      'OctoBot' object has no attribute 'community_auth'
 Traceback (most recent call last):
   File "C:\Users\hoon3\GitHub\TEST\octobot\commands.py", line 160, in start_bot
     await bot.initialize()
-  File "C:\Users\hoon3\GitHub\TEST\octobot\octobot.py", line 100, in initialize
-    self.community_auth.init_supports()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\octobot.py", line 105, in initialize
+    await self.start_producers()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\octobot.py", line 116, in start_producers
+    await self.exchange_producer.run()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\channels\octobot_channel.py", line 39, in run
+    await self.start()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\producers\exchange_producer.py", line 38, in start
+    await self.create_exchange(exchange_name, self.backtesting)
+  File "C:\Users\hoon3\GitHub\TEST\octobot\producers\exchange_producer.py", line 52, in create_exchange
+    self.octobot.community_auth,
 AttributeError: 'OctoBot' object has no attribute 'community_auth'
