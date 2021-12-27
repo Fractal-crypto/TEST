@@ -43,7 +43,7 @@ import octobot.octobot_backtesting_factory as octobot_backtesting
 import octobot.constants as constants
 import octobot.disclaimer as disclaimer
 import octobot.logger as octobot_logger
-import octobot.community as octobot_community
+# import octobot.community as octobot_community
 
 
 def update_config_with_args(starting_args, config: configuration.Configuration, logger):
@@ -211,7 +211,7 @@ def start_octobot(args):
         configuration_manager.config_health_check(config, args.backtesting)
 
         # Keep track of errors if any
-        octobot_community.register_error_uploader(constants.ERRORS_POST_ENDPOINT, config)
+        # octobot_community.register_error_uploader(constants.ERRORS_POST_ENDPOINT, config)
 
         # create OctoBot instance
         if args.backtesting:
@@ -225,11 +225,11 @@ def start_octobot(args):
         octobot.set_bot(bot)
 
         # Clear community cache
-        bot.community_auth.clear_cache()
+        # bot.community_auth.clear_cache()
 
-        if args.identifier:
-            # set community identifier
-            bot.community_auth.identifier = args.identifier[0]
+        # if args.identifier:
+        #     # set community identifier
+        #     bot.community_auth.identifier = args.identifier[0]
 
         if args.update:
             return commands.update_bot(bot.octobot_api)

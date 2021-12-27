@@ -1,0 +1,15 @@
+2021-12-26 16:57:29 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
+2021-12-26 16:57:29 DEBUG  OctoBot Launcher     cli.py:102      Running on Windows:10:AMD64 with python
+2021-12-26 16:57:29 INFO   OctoBot Launcher     cli.py:117      Loading config files...
+2021-12-26 16:57:29 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
+2021-12-26 16:57:29 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
+2021-12-26 16:57:30 INFO   telethon.crypto.libssl libssl.py:79       Failed to load SSL library: <class 'OSError'> (no library called "ssl" found)
+2021-12-26 16:57:30 INFO   telethon.crypto.aes  aes.py:25       cryptg module not installed and libssl not found, falling back to (slower) Python encryption
+2021-12-26 16:57:31 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
+2021-12-26 16:57:31 ERROR  OctoBot Launcher     commands.py:165      'OctoBot' object has no attribute 'community_auth'
+Traceback (most recent call last):
+  File "C:\Users\hoon3\GitHub\TEST\octobot\commands.py", line 160, in start_bot
+    await bot.initialize()
+  File "C:\Users\hoon3\GitHub\TEST\octobot\octobot.py", line 100, in initialize
+    self.community_auth.init_supports()
+AttributeError: 'OctoBot' object has no attribute 'community_auth'
