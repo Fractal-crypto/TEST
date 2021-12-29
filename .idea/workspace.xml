@@ -19,54 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac7c4bf7-debf-4cf4-b2a4-3d30f73c8174" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backtesting/data/ExchangeHistoryDataCollector_1640273634.5855823.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backtesting/data/ExchangeHistoryDataCollector_1640273831.239492.data" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.11" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.14" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.15" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.16" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.18" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.19" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/OctoBot.log.9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/OctoBot.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/OctoBot.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/OctoBot.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs/OctoBot.log.1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/authentication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/community_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/community_donation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/community_fields.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/community_manager.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/community_supports.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/community_tentacles_package.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/error_model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/errors_uploader.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/community/errors_upload/initializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/octobot.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/octobot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/octobot_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/octobot_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/octobot/producers/exchange_producer.py" beforeDir="false" afterPath="$PROJECT_DIR$/octobot/producers/exchange_producer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/community.py" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/community.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/models/configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/tentacles/Services/Interfaces/web_interface/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/profiles/daily_trading/specific_config/DailyTradingMode.json" beforeDir="false" afterPath="$PROJECT_DIR$/user/profiles/daily_trading/specific_config/DailyTradingMode.json" afterDir="false" />
-    </list>
+    <list default="true" id="ac7c4bf7-debf-4cf4-b2a4-3d30f73c8174" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,6 +90,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640273494418">
