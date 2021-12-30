@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac7c4bf7-debf-4cf4-b2a4-3d30f73c8174" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/OctoBot.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/OctoBot.log.1" beforeDir="false" />
-    </list>
+    <list default="true" id="ac7c4bf7-debf-4cf4-b2a4-3d30f73c8174" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,36 +91,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640273494418">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1640273494418" />
-    <state width="1259" height="185" key="GridCell.Tab.0.bottom" timestamp="1640242149113">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="185" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
-    <state width="1259" height="185" key="GridCell.Tab.0.center" timestamp="1640242149113">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="185" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
-    <state width="1259" height="185" key="GridCell.Tab.0.left" timestamp="1640242149113">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="185" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
-    <state width="1259" height="185" key="GridCell.Tab.0.right" timestamp="1640242149113">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="185" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1640242149113" />
-    <state x="142" y="5" key="SettingsEditor" timestamp="1640244938038">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="142" y="5" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1640244938038" />
-    <state x="347" y="92" width="587" height="536" key="find.popup" timestamp="1640490281091">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state x="347" y="92" width="587" height="536" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1640490281091" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
