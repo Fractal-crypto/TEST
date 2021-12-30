@@ -1,10 +1,10 @@
-2021-12-31 00:16:53 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
-2021-12-31 00:16:53 DEBUG  OctoBot Launcher     cli.py:102      Running on Darwin:21.1.0:arm64 with python
-2021-12-31 00:16:53 INFO   OctoBot Launcher     cli.py:117      Loading config files...
-2021-12-31 00:16:53 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
-2021-12-31 00:16:53 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
-2021-12-31 00:16:53 INFO   Commands             commands.py:103      OctoBot tentacles are damaged. Installing default tentacles ...
-2021-12-31 00:16:54 ERROR  octobot_tentacles_manager.api.util.tentacles_management tentacles_management.py:35       Cannot connect to host static.octobot.online:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1131)')]
+2021-12-31 00:16:31 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
+2021-12-31 00:16:31 DEBUG  OctoBot Launcher     cli.py:102      Running on Darwin:21.1.0:arm64 with python
+2021-12-31 00:16:31 INFO   OctoBot Launcher     cli.py:117      Loading config files...
+2021-12-31 00:16:31 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
+2021-12-31 00:16:31 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
+2021-12-31 00:16:31 INFO   Commands             commands.py:103      OctoBot tentacles are damaged. Installing default tentacles ...
+2021-12-31 00:16:31 ERROR  octobot_tentacles_manager.api.util.tentacles_management tentacles_management.py:35       Cannot connect to host static.octobot.online:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1131)')]
 Traceback (most recent call last):
   File "/Users/seonghanim/PycharmProjects/pythonProject1/venv/lib/python3.8/site-packages/aiohttp/connector.py", line 985, in _wrap_create_connection
     return await self._loop.create_connection(*args, **kwargs)  # type: ignore[return-value]  # noqa
@@ -46,18 +46,18 @@ Traceback (most recent call last):
   File "/Users/seonghanim/PycharmProjects/pythonProject1/venv/lib/python3.8/site-packages/aiohttp/connector.py", line 987, in _wrap_create_connection
     raise ClientConnectorCertificateError(req.connection_key, exc) from exc
 aiohttp.client_exceptions.ClientConnectorCertificateError: Cannot connect to host static.octobot.online:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1131)')]
-2021-12-31 00:16:54 ERROR  octobot_tentacles_manager.api.util.tentacles_management tentacles_management.py:35       Exception during InstallWorker processing: Cannot connect to host static.octobot.online:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1131)')] (ClientConnectorCertificateError)
-2021-12-31 00:16:54 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-31 00:16:54 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-31 00:16:54 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-31 00:16:54 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-31 00:16:54 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: ['notification', 'error'] action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
-2021-12-31 00:16:54 DEBUG  EvaluatorProducer    octobot_channel.py:38       Pausing...
-2021-12-31 00:16:54 DEBUG  MatrixChannel        logger.py:160      Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=*, evaluator_type=*]
-2021-12-31 00:16:54 DEBUG  ExchangeProducer     octobot_channel.py:38       Pausing...
-2021-12-31 00:16:54 DEBUG  ServiceFeedProducer  octobot_channel.py:38       Pausing...
-2021-12-31 00:16:54 DEBUG  InterfaceProducer    octobot_channel.py:38       Pausing...
-2021-12-31 00:16:54 ERROR  OctoBotChannelTradingConsumer events.py:81       Please ensure your tentacles configuration file is valid and at least one trading mode is activated
+2021-12-31 00:16:31 ERROR  octobot_tentacles_manager.api.util.tentacles_management tentacles_management.py:35       Exception during InstallWorker processing: Cannot connect to host static.octobot.online:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1131)')] (ClientConnectorCertificateError)
+2021-12-31 00:16:31 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-31 00:16:31 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-31 00:16:31 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-31 00:16:31 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-31 00:16:31 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: ['notification', 'error'] action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2021-12-31 00:16:31 DEBUG  EvaluatorProducer    octobot_channel.py:38       Pausing...
+2021-12-31 00:16:31 DEBUG  MatrixChannel        logger.py:160      Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=*, evaluator_type=*]
+2021-12-31 00:16:31 DEBUG  ExchangeProducer     octobot_channel.py:38       Pausing...
+2021-12-31 00:16:31 DEBUG  ServiceFeedProducer  octobot_channel.py:38       Pausing...
+2021-12-31 00:16:31 DEBUG  InterfaceProducer    octobot_channel.py:38       Pausing...
+2021-12-31 00:16:31 ERROR  OctoBotChannelTradingConsumer events.py:81       Please ensure your tentacles configuration file is valid and at least one trading mode is activated
 Traceback (most recent call last):
   File "octobot_trading/octobot_channel_consumer.py", line 76, in octobot_trading.octobot_channel_consumer._handle_creation
   File "octobot_trading/exchanges/exchange_builder.py", line 49, in build
@@ -66,8 +66,8 @@ Traceback (most recent call last):
   File "/Users/seonghanim/PycharmProjects/pythonProject1/venv/lib/python3.8/site-packages/octobot_trading/modes/mode_config.py", line 48, in get_activated_trading_mode
     raise errors.ConfigTradingError(f"Please ensure your tentacles configuration file is valid and "
 octobot_commons.errors.ConfigTradingError: Please ensure your tentacles configuration file is valid and at least one trading mode is activated
-2021-12-31 00:16:54 ERROR  OctoBotChannelTradingConsumer events.py:81       Error when creating a new binance exchange connexion: ConfigTradingError Please ensure your tentacles configuration file is valid and at least one trading mode is activated (ConfigTradingError)
-2021-12-31 00:18:23 INFO   TaskManager          task_manager.py:74       Stopping tasks...
-2021-12-31 00:18:23 INFO   OctoBot              octobot.py:137      Shutting down.
-2021-12-31 00:18:23 INFO   TaskManager          task_manager.py:94       Tasks stopped.
-2021-12-31 00:18:23 DEBUG  TaskManager          task_manager.py:66       Stopped OctoBot main loop
+2021-12-31 00:16:31 ERROR  OctoBotChannelTradingConsumer events.py:81       Error when creating a new binance exchange connexion: ConfigTradingError Please ensure your tentacles configuration file is valid and at least one trading mode is activated (ConfigTradingError)
+2021-12-31 00:16:51 INFO   TaskManager          task_manager.py:74       Stopping tasks...
+2021-12-31 00:16:51 INFO   OctoBot              octobot.py:137      Shutting down.
+2021-12-31 00:16:51 DEBUG  TaskManager          task_manager.py:66       Stopped OctoBot main loop
+2021-12-31 00:16:51 INFO   TaskManager          task_manager.py:94       Tasks stopped.
