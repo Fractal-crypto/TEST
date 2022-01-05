@@ -1,0 +1,211 @@
+2022-01-05 12:20:27 INFO   OctoBot Launcher     cli.py:182      Version : 0.4.3
+2022-01-05 12:20:27 DEBUG  OctoBot Launcher     cli.py:102      Running on Linux:5.11.0-43-generic:x86_64 with python
+2022-01-05 12:20:27 INFO   OctoBot Launcher     cli.py:117      Loading config files...
+2022-01-05 12:20:27 INFO   Configuration        configuration.py:99       Using DailyTrading profile.
+2022-01-05 12:20:27 INFO   OctoBot Launcher     cli.py:89       Disclaimer accepted by user.
+2022-01-05 12:20:27 INFO   telethon.crypto.aes  aes.py:23       libssl detected, it will be used for encryption
+2022-01-05 12:20:28 ERROR  TentacleLoader       __init__.py:17       Error when loading web_interface: ModuleNotFoundError (No module named 'octobot.community'). If this error persists, try reinstalling your tentacles via "python start.py tentacles --install --all".
+2022-01-05 12:20:28 ERROR  TentacleLoader       __init__.py:26       Error when loading web_notifier: ModuleNotFoundError (No module named 'octobot.community'). If this error persists, try reinstalling your tentacles via "python start.py tentacles --install --all".
+2022-01-05 12:20:28 DEBUG  Commands             commands.py:101      OctoBot tentacles are up to date.
+2022-01-05 12:20:28 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2022-01-05 12:20:28 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['exchange'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2022-01-05 12:20:28 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['evaluator'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2022-01-05 12:20:28 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: * action: ['interface', 'notification', 'service_feed', 'start_service_feed', 'exchange_registration'] [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2022-01-05 12:20:28 DEBUG  OctoBotChannel       octobot_channel.py:87       Consumer started for subject: ['notification', 'error'] action: * [OctoBotChannelConsumer with callback: octobot_channel_callback]
+2022-01-05 12:20:28 DEBUG  EvaluatorProducer    octobot_channel.py:38       Pausing...
+2022-01-05 12:20:28 DEBUG  MatrixChannel        logger.py:160      Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=*, evaluator_type=*]
+2022-01-05 12:20:28 DEBUG  ExchangeProducer     octobot_channel.py:38       Pausing...
+2022-01-05 12:20:28 DEBUG  ServiceFeedProducer  octobot_channel.py:38       Pausing...
+2022-01-05 12:20:28 DEBUG  InterfaceProducer    octobot_channel.py:38       Pausing...
+2022-01-05 12:20:28 WARNING CCXTExchange[binance] events.py:81       Exchange configuration tokens are not set yet, to use OctoBot's real trader's features, please enter your api tokens in exchange configuration
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.google_service_feed.google_feed.GoogleServiceFeed object at 0x7fe5006135e0>} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.reddit_service_feed.reddit_feed.RedditServiceFeed object at 0x7fe50059e760>} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.telegram_api_service_feed.telegram_api_feed.TelegramApiServiceFeed object at 0x7fe50059e7c0>} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.telegram_service_feed.telegram_feed.TelegramServiceFeed object at 0x7fe50059e820>} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <tentacles.Services.Services_feeds.trading_view_service_feed.trading_view_feed.TradingViewServiceFeed object at 0x7fe50059e880>} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = service_feed || DATA = {'instance': <TwitterServiceFeed(TwitterServiceFeed, initial)>} 
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling trades
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling l2_book
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling l3_book
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling book_delta
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling book_ticker
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling open_interest
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling mini_ticker
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling ticker
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling funding
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling mark_price
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling volume
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling liquidations
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling futures_index
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling candle
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is handling kline
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling position
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling portfolio
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling trade
+2022-01-05 12:20:29 DEBUG  WebSocket - CryptofeedWebSocketExchange events.py:81       binance's websocket is not handling orders
+2022-01-05 12:20:29 WARNING WebSocket - binance  events.py:81       Exchange configuration tokens are not set yet, to use OctoBot's real trader's features, please enter your api tokens in exchange configuration
+2022-01-05 12:20:29 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1d
+2022-01-05 12:20:29 INFO   ExchangeManager      events.py:81       CryptofeedWebSocketExchange connected to Binance
+2022-01-05 12:20:29 DEBUG  OrderBookUpdater[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  MarkPriceUpdater[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  FundingUpdater[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  OrdersUpdaterSimulator[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  BalanceProfitabilityUpdater events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  PositionsUpdaterSimulator[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  SpotPortfolioSimulator[binance] events.py:81       Portfolio updated | Current Portfolio : {'BTC': {'available': 10.0, 'total': 10.0}, 'USDT': {'available': 1000.0, 'total': 1000.0}}
+2022-01-05 12:20:29 INFO   PortfolioManager     events.py:81       Current Portfolio : {'BTC': {'available': Decimal('10'), 'total': Decimal('10')}, 'USDT': {'available': Decimal('1000'), 'total': Decimal('1000')}}
+2022-01-05 12:20:29 DEBUG  TraderSimulator[binance] events.py:81       Enabled on binance
+2022-01-05 12:20:29 DEBUG  DailyTradingModeProducer daily_trading.py:51       Pausing...
+2022-01-05 12:20:29 DEBUG  ModeChannel[binance] daily_trading.py:56       Consumer started for : [trading_mode_name=DailyTradingMode, state=*, cryptocurrency=*, symbol=BTC/USDT, time_frame=*]
+2022-01-05 12:20:29 DEBUG  TradingModeFactory[binance] events.py:81       DailyTradingMode started for [cryptocurrency=*, symbol=BTC/USDT, time_frame=*]
+2022-01-05 12:20:29 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 4h
+2022-01-05 12:20:29 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1h
+2022-01-05 12:20:29 DEBUG  WebSocket - binance  thread.py:57       Subscribed to candles for BTC-USDT on 1m
+2022-01-05 12:20:29 DEBUG  OrderBookUpdater[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  MarkPriceUpdater[binance] events.py:81       Pausing...
+2022-01-05 12:20:29 DEBUG  RecentTradeChannel[binance] events.py:81       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  BalanceChannel[binance] events.py:81       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  MarkPriceChannel[binance] events.py:81       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  MarkPriceUpdater[binance] events.py:81       Resuming...
+2022-01-05 12:20:29 DEBUG  MatrixChannel        events.py:81       Consumer started for : [matrix_id=b5a24571-7f37-4576-97a6-536a962b3b30, cryptocurrency=*, symbol=BTC/USDT, time_frame=*, evaluator_name=*, exchange_name=binance, evaluator_type=STRATEGIES]
+2022-01-05 12:20:29 DEBUG  TickerChannel[binance] logger.py:97       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  MiniTickerChannel[binance] logger.py:101      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  RecentTradeChannel[binance] logger.py:105      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  OrderBookChannel[binance] logger.py:109      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  OrderBookTickerChannel[binance] logger.py:113      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  KlineChannel[binance] logger.py:117      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  OHLCVChannel[binance] logger.py:121      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  FundingChannel[binance] logger.py:125      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  MarkPriceChannel[binance] logger.py:129      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  WebSocket - binance  thread.py:57       Starting websocket client with 4 feeds.
+2022-01-05 12:20:29 DEBUG  BalanceChannel[binance] logger.py:133      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  BalanceProfitabilityChannel[binance] logger.py:137      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  BalanceProfitabilityUpdater logger.py:137      Resuming...
+2022-01-05 12:20:29 DEBUG  TradesChannel[binance] logger.py:141      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  LiquidationsChannel[binance] logger.py:145      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  PositionsChannel[binance] logger.py:149      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  PositionsUpdaterSimulator[binance] logger.py:149      Resuming...
+2022-01-05 12:20:29 DEBUG  OrdersChannel[binance] logger.py:153      Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  OrdersUpdaterSimulator[binance] logger.py:153      Resuming...
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = exchange || DATA = {'exchange_id': '5dc4743f-f779-43dc-b29f-921b925553db'} 
+2022-01-05 12:20:29 DEBUG  RecentTradeChannel[binance] events.py:81       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  TickerChannel[binance] events.py:81       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
+2022-01-05 12:20:29 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
+2022-01-05 12:20:29 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
+2022-01-05 12:20:29 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
+2022-01-05 12:20:29 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol BTC/USDT
+2022-01-05 12:20:29 DEBUG  RSIMomentumEvaluator abstract_evaluator.py:243      Evaluator started
+2022-01-05 12:20:29 DEBUG  OHLCVChannel[binance] TA_evaluator.py:48       Consumer started for symbol *
+2022-01-05 12:20:29 DEBUG  DoubleMovingAverageTrendEvaluator abstract_evaluator.py:243      Evaluator started
+2022-01-05 12:20:29 DEBUG  MatrixChannel        strategy_evaluator.py:53       Consumer started for : [matrix_id=*, cryptocurrency=*, symbol=*, time_frame=*, evaluator_name=*, exchange_name=binance, evaluator_type=*]
+2022-01-05 12:20:29 DEBUG  SimpleStrategyEvaluator abstract_evaluator.py:243      Evaluator started
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = evaluator || DATA = {'matrix_id': 'b5a24571-7f37-4576-97a6-536a962b3b30'} 
+2022-01-05 12:20:29 INFO   GoogleServiceFeed    abstract_service_feed.py:124      Initializing feed reception ...
+2022-01-05 12:20:29 INFO   GoogleServiceFeed    abstract_service_feed.py:119      Nothing to monitor, feed is closing.
+2022-01-05 12:20:29 INFO   ServiceFactory       service_factory.py:54       RedditService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2022-01-05 12:20:29 DEBUG  RedditServiceFeed    abstract_service_user.py:59       Impossible to start RedditServiceFeed: required service RedditService is not available.
+2022-01-05 12:20:29 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start RedditServiceFeed: missing service(s) configuration.
+2022-01-05 12:20:29 INFO   ServiceFactory       service_factory.py:54       TelegramApiService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2022-01-05 12:20:29 DEBUG  TelegramApiServiceFeed abstract_service_user.py:59       Impossible to start TelegramApiServiceFeed: required service TelegramApiService is not available.
+2022-01-05 12:20:29 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TelegramApiServiceFeed: missing service(s) configuration.
+2022-01-05 12:20:29 INFO   ServiceFactory       service_factory.py:54       TelegramService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2022-01-05 12:20:29 DEBUG  TelegramServiceFeed  abstract_service_user.py:59       Impossible to start TelegramServiceFeed: required service TelegramService is not available.
+2022-01-05 12:20:29 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TelegramServiceFeed: missing service(s) configuration.
+2022-01-05 12:20:29 INFO   ServiceFactory       service_factory.py:54       WebHookService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2022-01-05 12:20:29 DEBUG  TradingViewServiceFeed abstract_service_user.py:59       Impossible to start TradingViewServiceFeed: required service WebHookService is not available.
+2022-01-05 12:20:29 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TradingViewServiceFeed: missing service(s) configuration.
+2022-01-05 12:20:29 INFO   ServiceFactory       service_factory.py:54       TwitterService can't be initialized: configuration is missing, wrong or incomplete. This is normal if you did not configure it yet.
+2022-01-05 12:20:29 DEBUG  TwitterServiceFeed   abstract_service_user.py:59       Impossible to start TwitterServiceFeed: required service TwitterService is not available.
+2022-01-05 12:20:29 DEBUG  OctoBotChannelServiceConsumer octobot_channel_consumer.py:141      Impossible to start TwitterServiceFeed: missing service(s) configuration.
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': True} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2022-01-05 12:20:29 DEBUG  OctoBot Channel      logger.py:397      OCTOBOT_CHANNEL : SUBJECT = notification || ACTION = start_service_feed || DATA = {'successful_operation': False} 
+2022-01-05 12:20:30 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_DAY
+2022-01-05 12:20:30 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_HOUR
+2022-01-05 12:20:30 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.FOUR_HOURS
+2022-01-05 12:20:30 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history loaded for BTC/USDT on TimeFrames.ONE_MINUTE
+2022-01-05 12:20:30 DEBUG  OHLCVUpdater[binance] events.py:81       Pushing completed initialization candles
+2022-01-05 12:20:30 DEBUG  OHLCVUpdater[binance] events.py:81       Candle history initial fetch completed
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || CANDLE = [1641254400.0, 46446.1, 47557.54, 45500.0, 45832.01, 35491.4136]
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || CANDLE = [1641326400.0, 46052.35, 46428.27, 45760.05, 45832.01, 3544.40718]
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || CANDLE = [1641348000.0, 46111.5, 46390.15, 46111.5, 46296.95, 639.23432]
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:231      OHLCV : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || CANDLE = [1641352740.0, 46490.87, 46498.98, 46442.21, 46456.38, 6.83195]
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1d || NOTE = -0.30662407338310105 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1d || NOTE = -0.2386283125735022 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 4h || NOTE = -0.12557182385919194 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = DoubleMovingAverageTrendEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1h || NOTE = 0.1319117114997059 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 4h || NOTE = -0.3082019509595477 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = RSIMomentumEvaluator || EVALUATOR_TYPE = TA || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = 1h || NOTE = -0.2577284926902477 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.18414049032764745 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.18414049032764745 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 DEBUG  OctoBot Channel      logger.py:365      MATRIX : EXCHANGE = binance || EVALUATOR = SimpleStrategyEvaluator || EVALUATOR_TYPE = STRATEGIES || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TF = None || NOTE = -0.18414049032764745 [MATRIX id = b5a24571-7f37-4576-97a6-536a962b3b30] 
+2022-01-05 12:20:30 INFO   DailyTradingModeProducer daily_trading.py:473      [BTC/USDT] new state: LONG
+2022-01-05 12:20:30 DEBUG  DailyTradingModeConsumer events.py:81       Entering create_order_if_possible for BTC/USDT
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1641352800.0, 46456.39, 46456.39, 46442.22, 46442.23, 2.95399]
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1641351600.0, 46296.96, 46549.0, 46296.95, 46442.23, 337.57376]
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46442.23, 2709.81354]
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46442.23, 2709.81354]
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 46456.39, 'low': 46442.22, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 46456.39, 'close': 46442.23, 'last': 46442.23, 'previousClose': None, 'baseVolume': 2.95399, 'timestamp': 1641352830.992}
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 46442.23
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0 USDT (0%)
+2022-01-05 12:20:31 DEBUG  TraderSimulator[binance] daily_trading.py:363      Order creation : BTC/USDT | BUY_LIMIT | Price : 45751.68 | Quantity : 0.00460 | State : Unknown | id : 505fcabc-8538-42cb-a2d0-a7b659ffef4e 
+2022-01-05 12:20:31 INFO   BuyLimitOrder | 505fcabc-8538-42cb-a2d0-a7b659ffef4e daily_trading.py:363      BTC/USDT | BUY_LIMIT | Price : 45751.68 | Quantity : 0.00460 | State : open | id : 505fcabc-8538-42cb-a2d0-a7b659ffef4e open on binance
+2022-01-05 12:20:31 DEBUG  DailyTradingModeConsumer events.py:81       Exiting create_order_if_possible for BTC/USDT
+2022-01-05 12:20:31 DEBUG  OctoBot Channel      logger.py:320      ORDERS : EXCHANGE = binance || SYMBOL = BTC/USDT || BUY LIMIT: 0.0046 BTC at 45751.68 USDT on Binance || status = open || CREATED = False || FROM_BOT = True
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1641352800.0, 46456.39, 46456.39, 46442.22, 46442.24, 3.27448]
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1641351600.0, 46296.96, 46549.0, 46296.95, 46442.24, 337.89425]
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46442.24, 2710.13403]
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46442.24, 2710.13403]
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 46456.39, 'low': 46442.22, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 46456.39, 'close': 46442.24, 'last': 46442.24, 'previousClose': None, 'baseVolume': 3.27448, 'timestamp': 1641352833.016}
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 46442.24
+2022-01-05 12:20:33 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = 0.1 USDT (0.00002%)
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46442.21, 2710.36535]
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46442.21, 2710.36535]
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1641352800.0, 46456.39, 46456.39, 46442.21, 46442.21, 3.5058]
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 46456.39, 'low': 46442.21, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 46456.39, 'close': 46442.21, 'last': 46442.21, 'previousClose': None, 'baseVolume': 3.5058, 'timestamp': 1641352835.576}
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 46442.21
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = -0.2 USDT (-0.00004%)
+2022-01-05 12:20:35 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1641351600.0, 46296.96, 46549.0, 46296.95, 46442.21, 338.12557]
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1d || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46436.75, 2710.49073]
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 4h || KLINE = [1641340800.0, 45832.01, 46549.0, 45722.21, 46436.75, 2710.49073]
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1m || KLINE = [1641352800.0, 46456.39, 46456.39, 46436.75, 46436.75, 3.63118]
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:182      TICKER : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TICKER = {'high': 46456.39, 'low': 46436.75, 'bid': None, 'bidVolume': None, 'ask': None, 'askVolume': None, 'open': 46456.39, 'close': 46436.75, 'last': 46436.75, 'previousClose': None, 'baseVolume': 3.63118, 'timestamp': 1641352837.648}
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:267      MARK PRICE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || MARK PRICE = 46436.75
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:286      BALANCE PROFITABILITY : EXCHANGE = binance || PROFITABILITY = -54.8 USDT (-0.01177%)
+2022-01-05 12:20:37 DEBUG  OctoBot Channel      logger.py:258      KLINE : EXCHANGE = binance || CRYPTOCURRENCY = BTC || SYMBOL = BTC/USDT || TIME FRAME = 1h || KLINE = [1641351600.0, 46296.96, 46549.0, 46296.95, 46436.75, 338.25095]
+2022-01-05 12:20:39 INFO   TaskManager          task_manager.py:74       Stopping tasks...
+2022-01-05 12:20:47 INFO   CCXTExchange[binance] exchange.py:31       Closing connection.
+2022-01-05 12:20:47 DEBUG  MatrixChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  DailyTradingModeConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 DEBUG  ExchangeChannelConsumer events.py:81       Cancelled task
+2022-01-05 12:20:47 INFO   CCXTExchange[binance] exchange.py:31       Connection closed.
+2022-01-05 12:20:47 INFO   OctoBot              octobot.py:137      Shutting down.
+2022-01-05 12:20:47 INFO   TaskManager          task_manager.py:94       Tasks stopped.
+2022-01-05 12:20:47 DEBUG  TaskManager          task_manager.py:66       Stopped OctoBot main loop
